@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <style type="text/css">
+      .rowkanan {
+        background-color:rgb(123, 233, 147);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 100% 100%;
+      }
+    </style>
+    
+    <title>Klontangan</title>
+  </head>
+  <body>
+    <!-- Navbar Menu -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Total : <input type="text" name="txthasil" id="txthasil"></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <br><br><br><br>
+    <h3>Input Klontangan</h3>
+    <table class="table table-striped">
+      <thead>
+        <th>No</th>
+        <th>Nama</th>
+        <th>Rp</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Ilham S</td>
+          <td><input type="number" name="txt1" id="t1" class="form-control" value="0" onkeyup="sum();"></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Imam Sulianto</td>
+          <td><input type="number" name="txt2" id="t2" class="form-control" value="0" onkeyup="sum();" /></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Ma`ruf Z</td>
+          <td><input type="number" name="t3" id="t3" class="form-control" value="0" onkeyup="sum();" /></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Kusnin</td>
+          <td><input type="number" name="t4" id="t4" class="form-control" value="0" onkeyup="sum();"></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Tony</td>
+          <td><input type="number" name="t5" id="t5" class="form-control" value="0" onkeyup="sum();"></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Sugiono</td>
+          <td><input type="number" name="t6" id="t6" class="form-control" value="0" onkeyup="sum();"></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Andik</td>
+          <td><input type="number" name="t7" id="t7" class="form-control" value="0" onkeyup="sum();"></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Soleh</td>
+          <td><input type="number" name="t8" id="t8" class="form-control" value="0" onkeyup="sum();"></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Fajar A</td>
+          <td><input type="number" name="t9" id="t9" class="form-control" value="0" onkeyup="sum();"></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Supri</td>
+          <td><input type="number" name="t10" id="t10" class="form-control" value="0" onkeyup="sum();"></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <script>
+      function sum(){
+        console.log('hai');
+            var t1 = document.getElementById('t1').value;
+            var t2 = document.getElementById('t2').value;
+            var t3 = document.getElementById('t3').value;
+            var t4 = document.getElementById('t4').value;
+            var t5 = document.getElementById('t5').value;
+            var t6 = document.getElementById('t6').value;
+            var t7 = document.getElementById('t7').value;
+            var t8 = document.getElementById('t8').value;
+            var t9 = document.getElementById('t9').value;
+            var t10 = document.getElementById('t10').value;
+            var result = parseInt(t1) + parseInt(t2) + parseInt(t3)+ parseInt(t4)+ parseInt(t5)+parseInt(t6) + parseInt(t7)+ parseInt(t8)+ parseInt(t9)+ parseInt(t10);
+            if (!isNaN(result)) {
+               document.getElementById('txthasil').value = result;
+            }
+      }
+      </script>    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    
+  </body>
+</html>
